@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>❤ for U</title>
+  <meta name="description" content="给你的一份小心意。" />
+  <link rel="icon" href="/heart.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="/style.css" />
+  <meta name="theme-color" content="#0b1220">
+</head>
+<body>
+  <main class="wrap">
+    <div class="brand">love.hwfan.top</div>
+    <section class="card">
+      <div class="heart" aria-hidden="true"></div>
+      <h1>给你 ❤</h1>
+      <p class="sub">这是一份专属页面。</p>
+
+      <div class="video-wrap">
+        <video id="vid" playsinline muted autoplay loop preload="metadata" poster="/poster.jpg">
+          <source src="/media/video.mp4" type="video/mp4">
+        </video>
+        <button id="toggle-sound" class="btn" aria-pressed="false">🔊 开声音</button>
+      </div>
+
+      <p class="tips">如果没有自动播放，请点一下视频。<br/>也可以在链接后面加参数切换外链：<code>?v=https://example.com/your.mp4</code></p>
+    </section>
+
+    <footer>© <span id="y"></span> xiaofan · <a href="mailto:hi@hwfan.top">hi@hwfan.top</a></footer>
+  </main>
+
+  <script src="/script.js"></script>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
